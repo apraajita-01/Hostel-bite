@@ -1,0 +1,133 @@
+.menu-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-header h1 {
+  font-size: 1.75rem;
+}
+
+.menu-header__sub {
+  color: var(--color-text-muted);
+  margin-top: 0.35rem;
+}
+
+.menu-toolbar {
+  margin-bottom: 1.5rem;
+}
+
+.menu-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  background: var(--color-surface);
+}
+
+.menu-search:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu-cat-btn {
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.menu-cat-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.menu-cat-btn.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.menu-item:hover:not(.menu-item--soldout) {
+  box-shadow: var(--shadow-md);
+}
+
+.menu-item--soldout {
+  opacity: 0.7;
+}
+
+.menu-item__emoji {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1.25rem;
+  background: var(--color-primary-light);
+}
+
+.menu-item__body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item__cat {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.menu-item h3 {
+  font-size: 1.05rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.menu-item__price {
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.menu-item__add {
+  margin-top: auto;
+  width: 100%;
+}
+
+.menu-item__soldout {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.4rem;
+  text-align: center;
+  background: #eee;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
