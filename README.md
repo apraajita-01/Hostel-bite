@@ -2,10 +2,6 @@
 
 A hostel canteen ordering app for students, admins, and helpers.
 
-## Live Demo
-
-Deployment link: Add your GitHub Pages / Vercel / Netlify link here
-
 ## Features
 
 - Student login and order flow
